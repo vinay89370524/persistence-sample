@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "3079ef08-504c-4039-bfef-51670189f703",
+		"name": "Persistence Sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{PERSISTENCE_SERVICE_URL}}/api/v1/data",
+					"host": [
+						"{{PERSISTENCE_SERVICE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Write Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sample\": \"value\"\n}"
+				},
+				"url": {
+					"raw": "{{PERSISTENCE_SERVICE_URL}}/api/v1/data",
+					"host": [
+						"{{PERSISTENCE_SERVICE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"data"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
