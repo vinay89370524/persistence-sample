@@ -6,6 +6,29 @@
 	},
 	"item": [
 		{
+			"name": "Check Service Online",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{PERSISTENCE_SERVICE_URL}}/",
+					"host": [
+						"{{PERSISTENCE_SERVICE_URL}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Read Data",
 			"request": {
 				"method": "GET",
